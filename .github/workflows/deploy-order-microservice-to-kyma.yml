@@ -16,10 +16,10 @@ jobs:
         with:
           method: kubeconfig
           kubeconfig: ${{ secrets.KUBECONFIG_SERVICE_ACCOUNT }}
-      - name: Setup namespace in Kyma
-        run: |
-          echo "*** Create namespace ***"
-          kubectl create ns ${{ env.NAMESPACE }}
+      # - name: Setup namespace in Kyma
+      #   run: |
+      #     echo "*** Create namespace ***"
+      #     kubectl create ns ${{ env.NAMESPACE }}
       - name: Setup MS SQL Deployment in Kyma
         run: |
           echo "*** Create secret ***"
