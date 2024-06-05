@@ -12,6 +12,6 @@ spec:
       methods:
         - GET
   service:
-    host: fe-ui5-mssql
     name: fe-ui5-mssql
     port: 80
+  host: fe-ui5-mssql
